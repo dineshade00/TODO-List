@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List Web App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+        body {
+            background-color: #cec6c0;
+            height: 600px;
+            background-image: url('https://images.unsplash.com/photo-1516796181074-bf453fbfa3e6?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover; /* Ensures the image covers the entire area */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            position: relative; /* Allows positioning of pseudo-element */
+           
+        
+        }
+        
+        
+    </style>
+</head>
+<body class="light-mode">
+    <div class="container py-5">
+        <!-- Header with Date, Time, and Dark/Light Mode Toggle -->
+        <div class="d-flex justify-content-between align-items-center">
+            <h1>To-Do List</h1>
+            <div>
+                <span id="date-time"></span>
+                <button id="toggle-mode" class="btn btn-secondary">Switch to Dark Mode</button>
+            </div>
+        </div>
+
+        <!-- Task Input Form -->
+        <div class="input-group mb-3">
+            <input type="text" id="task-input" class="form-control" placeholder="Enter your task">
+            <div class="input-group-append">
+                <button class="btn btn-primary" id="add-task">Add Task</button>
+            </div>
+        </div>
+
+        <!-- Task Filters -->
+        <div class="btn-group mb-3" role="group" aria-label="Task filters">
+            <button type="button" class="btn btn-outline-secondary" id="filter-all">All Tasks</button>
+            <button type="button" class="btn btn-outline-secondary" id="filter-active">Active</button>
+            <button type="button" class="btn btn-outline-secondary" id="filter-completed">Completed</button>
+        </div>
+
+        <!-- Task List -->
+        <ul class="list-group" id="task-list"></ul>
+
+        <!-- Task Counter -->
+        <p id="task-counter" class="mt-3">Total Tasks: 0 | Completed: 0 | Remaining: 0</p>
+    </div>
+
+    <!-- Include JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>

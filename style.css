@@ -1,0 +1,41 @@
+/* Light Mode */
+
+body.light-mode {
+    background-color: #f8f9fa;
+    color: #5897d6;
+}
+
+body.light-mode .list-group-item {
+    background-color: #ffffff;
+    border-color: #dee2e6;
+}
+
+body.light-mode .btn-outline-secondary {
+    border-color: #343a40;
+    color: #343a40;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+body.dark-mode .list-group-item {
+    background-color: #495057;
+    border-color: #6c757d;
+}
+
+body.dark-mode .btn-outline-secondary {
+    border-color: #f8f9fa;
+    color: #f8f9fa;
+}
+
+.completed-task {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+
+
+
